@@ -1,0 +1,489 @@
+% cv-us.tex
+% $Id: cv-us.tex,v 1.28 2006/12/12 22:53:52 jrblevin Exp $
+%
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2006 Jason Blevins
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents, however, I do ask that you
+% please leave this notice and the above URL in the source code if you
+% choose to redistribute this file.
+%
+% Jason R. Blevins <jrblevin@sdf.lonestar.org>
+% http://jrblevin.freeshell.org
+% Durham, December 12, 2006
+%
+%%---------------------------------------------------------------------------%
+%
+% Notes:
+%
+% * Don't forget to change `pdfauthor' and `keywords' in the \hypersetup
+%   section below.
+%
+% * To create a new page use: \newpage \opening
+%
+% * res.cls includes an \address{} command which can be used up to twice,
+%   but my address is too long for the format it uses.
+%
+% * Alternate documentclass statement to put headings in margin:
+%   \documentclass[margin,line,11pt,final]{res}
+%
+% * Can divide publication/presentation list into subsections by year:
+%   \section{\bf\small\hspace{8mm}2006}
+%
+%%----------------------------------------------------------------------------%
+
+\documentclass[overlapped,line,letterpaper]{res}
+
+\usepackage{ifpdf}
+
+\ifpdf
+  \usepackage[pdftex]{hyperref}
+\else
+  \usepackage[hypertex]{hyperref}
+\fi
+
+\hypersetup{
+  letterpaper,
+  colorlinks,
+  urlcolor=black,
+  pdfpagemode=none,
+  pdftitle={Curriculum Vitae},
+  pdfauthor={Jason R. Blevins},
+  pdfcreator={$ $Id: cv-us.tex,v 1.28 2006/12/12 22:53:52 jrblevin Exp $ $},
+  pdfsubject={Curriculum Vitae},
+  pdfkeywords={economics empirical industrial organization econometrics
+    microeconomics game theory sequential games
+    applied mathematics differential equations TANH method
+    hyperbolic tangent centroid decomposition updating singular value
+    decomposition linear algebra linux unix fortran c++}
+}
+
+%%===========================================================================%%
+
+\begin{document}
+
+%---------------------------------------------------------------------------
+% Document Specific Customizations
+
+% Make lists without bullets and with no indentation
+\setlength{\leftmargini}{0em}
+\renewcommand{\labelitemi}{}
+
+% Use large bold font for printed name at top of pages
+\renewcommand{\namefont}{\large\textbf}
+
+%---------------------------------------------------------------------------
+
+\name{Clifford Lam}
+
+\begin{resume}
+
+\begin{ncolumn}{2}
+  Department of Statistics          & Office: +44 (0)20 7955 7636 \\
+  London School of Economics        & Email: {\tt C.Lam2@lse.ac.uk} \\
+  and Political Science             & Web: \href{http://stats.lse.ac.uk/lam/}{http://stats.lse.ac.uk/lam/ } \\
+  Houghton Street
+  London WC2A 2AE\\
+  UK
+\end{ncolumn}
+
+%---------------------------------------------------------------------------
+
+\section{\bf Past and Present Position}
+\begin{itemize}
+\item[$\bullet$] {\bf London School of Economics, UK.}\\
+\vspace{6pt}
+Programme director, MSc Statistics (Financial Statistics) \hfill 2014 - 2016 (sabbatical 2016-17)\\
+\vspace{6pt}
+Associate Professor, Department of Statistics. \hfill 2013 - present\\
+\vspace{6pt}
+Lecturer, Department of Statistics. \hfill 2008 - 2013\\
+\end{itemize}
+
+
+\section{\bf Education}
+\begin{itemize}
+
+\item[$\bullet$]
+\begin{ncolumn}{2}
+{\bf Princeton University, U.S.A.}                          &   {\bf \hfill  2004 - 2008}\\
+Ph.D. student in Operations Research \& Fin. Eng.  &
+\end{ncolumn}
+\vspace{3pt}
+
+Ph.D. thesis: High-dimensional profile likelihood inference and covariance matrices estimation.\\
+ Adviser: Prof. Jianqing Fan.
+
+\vspace{3pt}
+Courses taken include:  Statistical Theory and Methods, Linear and Non-linear Optimization, Stochastic Modeling, Probability Theory, Stochastic Calculus and Finance, Financial Econometrics, Generalized Linear Models, Markov Processes, Asymptotic Theory in Statistics, Nonparametric Modeling and Functional Data Analysis.
+
+
+\vspace{10pt}
+\item[$\bullet$]
+\begin{ncolumn}{2}
+{\bf University of Oxford, U.K.}                   &   {\bf \hfill  2000 - 2001}\\
+M.Sc. in Applied Statistic                         & \hfill Class: Distinction
+\end{ncolumn}
+\vspace{3pt}
+
+M.Sc. dissertation : The British General Election : Analysis Of The Changes Of Electoral Results From 1997 To
+2001.\\
+Adviser: Prof. David Firth.
+
+
+\vspace{10pt}
+\item[$\bullet$]
+\begin{ncolumn}{2}
+{\bf University of Oxford, U.K.}                   &   {\bf \hfill  1997 - 2000}\\
+B.A. in Mathematical Sciences                         & \hfill Class:
+First Class Honor
+\end{ncolumn}
+
+\end{itemize}
+
+%---------------------------------------------------------------------------
+
+\section{Research Grants}
+\begin{itemize}
+\item[$\bullet$] STICERD/Annual Fund New Researcher Award. ``Dimension Reduction Using Factor Models : With Applications in Finance''. April 2009 - September 2012
+\end{itemize}
+
+%---------------------------------------------------------------------------
+
+
+
+
+\section{Research Interests}
+My research are focused in 1) statistical leaning techniques, especially for high dimensional data, and 2) time series analysis. These include semiparametric modelling, variables and feature selection, regularization methods for high dimensional time series analysis, to name but a few areas. One particular area of interest is the estimation of a large covariance/precision matrix from data. With random matrix theories more developed over the past decade, it is a high time for further developments of theories and methodologies in the area of high dimensional matrix estimation and applications. This area is important in a wide variety of scientific fields, including portfolio allocation and risk assessment in finance, classification and large scale hypothesis testing in bioinformatics, forecasting in macroeconomics time series, or cosmological survey in astrophysics.
+
+High dimensional time series modelling is needed nowadays for making sense of vast volume of data we can find everyday around us, including the internet. One particular research interest I have on high dimensional time series analysis is to find “factors” that can explain/summarise a majority of time series dynamics, like market factors that explain the dynamics of most stock prices in FTSE 100. A goal is to incorporate large number of variables that we can observe, and then summarise these into factors for increasing the explanatory and predictive power of various time series models.
+
+Another area of research is in spatial econometrics modelling. A commonly used model is the spatial lag/error model for a large spatial panel of time series. To be able to use such a model, a component called the spatial weight matrix, which is a square matrix of the same size as the dimension of the panel, has to be pre-specified. This matrix represents the underlying spatial interdependence structure of the data. Yet there are no universal rules in doing so, and most practitioner use certain distance metrics to specify such a matrix, which is at best a crude approximation to the said structure. Moreover, when the dimension of the panel increases, it becomes more difficult to specify this spatial weight matrix. There are in fact various ways to estimate the said matrix from data, and inference in the models with such a matrix estimated rather than pre-specified is also an important research element.
+
+
+
+
+
+
+\section{Papers/Working Papers}
+\begin{itemize}
+\item[$\bullet$] Lam, C. and Cheng, Q. (2017).
+    \href{http://stats.lse.ac.uk/lam/SpWgtLag2.pdf}{Spatial Lag Model with Time-lagged Effects and Spatial Weight Matrix Estimation}. {\em Manuscript}.
+
+\vspace{12pt}
+
+\item[$\bullet$] Lam, C. and Feng, P. (2017). \href{http://stats.lse.ac.uk/lam/wgtNERCOME2.pdf}{Integrating Regularized Covariance Matrix Estimators}. {\em Manuscript}. Supplementary material can be found  \href{http://stats.lse.ac.uk/lam/wgtNERCOME-proof.pdf}{here}.
+
+\vspace{12pt}
+
+\item[$\bullet$] Lam, C., Feng, P. and Hu, C. (2017). \href{http://stats.lse.ac.uk/lam/NERCOMEicv-final.pdf}{Nonlinear Shrinkage Estimation of Large Integrated Covariance Matrices}. {\em Biometrika}, to appear.
+
+\vspace{12pt}
+
+\item[$\bullet$] Lam, C. and Souza, P.C.L. (2016). \href{http://stats.lse.ac.uk/lam/IVLASSO-SpAdj3.pdf}{Spatial Lag Model Estimation with Sparse Adjustment for Spatial Weight Matrix}. {\em Manuscript}. Supplementary material can be found  \href{http://stats.lse.ac.uk/lam/Supp-SpAdj3.pdf}{here}.
+
+\vspace{12pt}
+
+\item[$\bullet$] Li, Z., Yao, J., Lam, C. and Yao, Q. (2016). \href{http://stats.lse.ac.uk/lam/wn5.pdf}{On testing a high-dimensional white noise}. {\em Manuscript}.
+
+\vspace{12pt}
+
+\item[$\bullet$] Lam, C. and Feng, P. (2016). \href{http://stats.lse.ac.uk/lam/NERIVE3.pdf}{A Nonparametric Eigenvalue-Regularized Integrated Covariance Matrix Estimator Using High-Frequency Data for Portfolio Allocation}. {\em Manuscript}.
+\vspace{12pt}
+
+
+\item[$\bullet$] Lam, C. (2016).
+\href{http://stats.lse.ac.uk/lam/AOS1393.pdf}{Nonparametric Eigenvalue-Regularized Precision or Covariance Matrix Estimator}. {\em Ann. Statist.}, {\bf 44(3)}, 928--953. Supplementary material can be found  \href{http://stats.lse.ac.uk/lam/Supp-NERCOME.pdf}{here}.
+
+
+\vspace{12pt}
+
+\item[$\bullet$] Lam, C. and Souza, P.C.L. (2015).
+\href{http://stats.lse.ac.uk/lam/IVRSM.pdf}{One-Step Regularized Spatial Weight Matrix and Fixed
+Effects Estimation with Instrumental Variables}. {\em Manuscript}.
+
+
+\vspace{12pt}
+
+
+
+\item[$\bullet$] Lam, C. and Souza, P.C.L. (2015).
+\href{http://stats.lse.ac.uk/lam/SpatialBlock_rev2.pdf}{Detection And Estimation Of Block Structure In Spatial
+Weight Matrix}. {\em Econometrics Review}, {\bf 35(8-10)}, 1347--1376.
+
+\vspace{12pt}
+
+\item[$\bullet$] Lam, C. and Souza, P.C.L. (2014).
+\href{http://stats.lse.ac.uk/lam/RSPT.pdf}{Regularization for Spatial Panel Time Series Using the Adaptive LASSO}. {\em LSE STICERD, Econometrics Paper Series}.
+
+\vspace{12pt}
+
+\item[$\bullet$] Lam, C. and Qu, C. (2013). \href{http://stats.lse.ac.uk/lam/POETdiscussion.pdf}{Discussion of ``Large covariance estimation by thresholding
+principal orthogonal complements'' by Fan, Liu and Mincheva}. {\em Journal of Royal Statistical Society B}.
+
+
+
+\vspace{12pt}
+\item[$\bullet$] Lam, C. (2012). \href{http://stats.lse.ac.uk/lam/bookarticle1.pdf}{Challenges to Time Series Analysis in the
+Computer Age}. {\em To be published in the book ``Statistics - Discovering your future power''}, China Statistics Press.\\
+
+\vspace{12pt}
+\item[$\bullet$] Lam, C. and Yao, Q. (2012).\href{http://stats.lse.ac.uk/lam/20thdoc.pdf}
+{Factor Modeling for High Dimensional Time-Series: Inference for the Number of Factors.}
+{\em Ann. Statist.}, {\bf 40(2)}, 694--726. Supplementary materials can be found \href{http://stats.lse.ac.uk/lam/Supp.pdf}{here}.\\
+
+
+\vspace{12pt}
+\item[$\bullet$] Lam, C., Yao, Q. and Bathia, N. (2011).
+\href{http://biomet.oxfordjournals.org/cgi/reprint/asr048?
+ijkey=soFrwd64Q1vvGQc&keytype=ref
+}{Estimation of Latent
+Factors for High-Dimensional Time Series.}
+{\em Biometrika}, {\bf 98(4)}, 901--918.\\
+
+
+\vspace{12pt}
+\item[$\bullet$] Lam, C. (2010). Estimation of Large
+Precision Matrices Through Block Penalization. {\em Manuscript}.\\
+
+
+\vspace{12pt}
+\item[$\bullet$] Lam, C. and Fan, J. (2009). \href{http://stats.lse.ac.uk/lam/AOS720.pdf}{Sparsistency and
+Rates of Convergence in Large Covariance Matrix Estimation}.
+{\em Ann. statist.}, {\bf 37(6B)}, 4254--4278.\\
+
+
+\vspace{12pt}
+\item[$\bullet$] Lam, C. and Fan, J. (2008). \href{http://stats.lse.ac.uk/lam/AOS544.pdf}{Profile-kernel likelihood inference with diverging number of parameters}.
+{\em  Ann. Statist.}, {\bf 36(5)}, 2232--2260.
+
+\end{itemize}
+
+\section{Referee Services}
+Associate editor of:
+\begin{itemize}
+  \item[$\bullet$] Statistica Sinica (2011-2014)
+  \item[$\bullet$] Journal of Statistical Planning and Inference (2012-)
+\end{itemize}
+
+Also served as a referee for journals including:\\
+Annals of Statistics, Journal of the American Statistical
+Association, Journal of the Royal Statistical Society: Series B,
+Econometrica, Journal of Time Series Analysis.
+
+
+\section{Organized Conference/Workshop}
+\begin{itemize}
+  \item[$\bullet$] Session ``Vast time series analysis and applications'' in the \href{http://cmstatistics.org/CMStatistics2017/organized.php}{10th International Conference of the ERCIM WG on CMStatistics 2017}.
+
+  \item[$\bullet$] Session ``Modelling and estimation in financial time series '' in the \href{http://cmstatistics.org/EcoSta2017/organized.php}{1st International Conference on Econometrics and Statistics, 15-17 June 2017, HKUST}.
+
+
+  \item[$\bullet$] Session ``Estimation of large random matrices: Theories and applications'' in the \href{http://www.cmstatistics.org/CMStatistics2015/organized.php}{8th International Conference of the ERCIM WG on CMStatistics 2015}.
+
+  \item[$\bullet$] \href{http://www.lse.ac.uk/statistics/events/SpecialEventsandConferences/Complex-Systems-in-Time-Series/main-page.aspx}
+      {Complex Systems in Time Series, LSE, December 4-5, 2015}.
+\end{itemize}
+
+
+
+\section{Presentations}
+\begin{itemize}
+\item[$\bullet$] 1st International Conference on Econometrics and Statistics, 15-17 June 2017, HKUST.
+\item[$\bullet$] One-day workshop on Modern Statistical Methods in Health and Environment, Brunel University, 9 June 2017.
+
+\item[$\bullet$] Seminar, University of Southampton, May 11, 2017.
+
+\item[$\bullet$] Southampton Finance and Econometrics Workshop, 4-5 May, 2017.
+
+\item[$\bullet$] Seminar, Bristol University, March 10, 2017.
+
+\item[$\bullet$]  6th Workshop on New Developments in Econometrics and Time Series. Institute of Financial Big Data, Universidad Carlos III de Madrid, 6-7 October, 2016.
+
+\item[$\bullet$] 2016 Asia Meeting of the Econometric Society on August 11 - 13, 2016. Doshisha University Imadegawa Campus, Kyoto.
+
+\item[$\bullet$] Seminar, Statistical Laboratory, Cambridge University, January 22, 2016.
+
+\item[$\bullet$] ERCIM 2015, University College London, December 14, 2015.
+
+%\item[$\bullet$] The 11th World Congress of the Econometric Society, Montr\'{e}al, Aug 17 - 21, 2015. Paper ``Regularization for Spatial Panel Time Series Using the Adaptive LASSO'' accepted and presented by co-author Pedro CL Souza.
+
+\item[$\bullet$] EMS 2015, VU University Amsterdam, July 6-10, 2015.
+
+
+\item[$\bullet$] CRiSM Seminar, The University of Warwick, May 29, 2015.
+
+
+\item[$\bullet$] Econometrics seminar, CORE, Universit\'{e} catholique de Louvain, April 27, 2015.
+
+\item[$\bullet$] Speaker, 1st UCL Workshop on the Theory of Big Data,
+7-9 January 2015.
+
+
+\item[$\bullet$] Invited speaker, Nonlinear Time Series Analysis
+Thresholding and Beyond, in honour of
+Professor Howell Tong¡¯s 70th Birthday, September 19-20, 2014, LSE, London.
+
+\item[$\bullet$] Invited speaker, FERM, June 25-28, 2014, Central University of Finance and Economics, Beijing, China.
+
+\item[$\bullet$] Invited speaker, ISNPS, June 12-16, 2014, C\'{a}diz, Spain.
+
+\item[$\bullet$] Seminar, University of York, May 1, 2014.
+
+\item[$\bullet$] Invited speaker for ICSA Hong Kong, December 2013.
+
+\item[$\bullet$] Organized session speaker for CFE-ERCIM 2013, London.
+
+\item[$\bullet$] Invited speaker for the Oberwolfach Workshop ``Statistical Inference for Complex Time Series Data'', September 22-28, 2013.
+
+\item[$\bullet$] Invited speaker for the $12$th International Workshop Spatial Econometrics and Statistics, Universit\'{e} d'Orl\'{e}ans (France), June 17-19, 2013.
+
+\item[$\bullet$] Seminar, Queen Mary University of London, February 28, 2013.\\
+
+\item[$\bullet$] Invited speaker for the conference ``Meeting the Challenges of High Dimension: Statistical Methodology, Theory and Applications'', 13 Aug - 26 Oct, 2012, IMS, National University of Singapore. \\
+
+\item[$\bullet$] Invited speaker for the conference ``Financial Time Series Analysis: High-dimensionality, Non-stationarity and the Financial Crisis'', June 1-22, 2012, National University of Singapore. \\
+
+\item[$\bullet$] Seminar, ECARES, Université Libre de Bruxelles, April 26, 2012.\\
+
+\item[$\bullet$] Seminar, the University of Bristol, December 2, 2011.\\
+
+\item[$\bullet$] Invited speaker for JSM 2011, July 30 - August 4,
+Miami Beach, Florida.
+
+\item[$\bullet$] Invited speaker for IWFOS 2011, June 16-18, 2011, Santander, Spain.\\
+
+\item[$\bullet$] Seminar, the University of Manchester, March 9, 2011.\\
+
+\item[$\bullet$] Invited speaker for ICSA 2010, December 19-22, 2010, Guangzhou University, Guangzhou, China.\\
+
+\item[$\bullet$] Invited speaker for INSPIRE 2010 Conference on information representation and estimation, September 6-8, 2010, UCL, UK.\\
+
+\item[$\bullet$] Invited speaker for EMS 2010, August 17-22, 2010, The University of Piraeus, Greece.\\
+
+\item[$\bullet$] Guest Lectures on Factor Modeling, July 27 - August 9, 2010, Center for the Study of Finance and Insurance, Osaka University.\\
+
+\item[$\bullet$] Invited speaker for the ``\href{http://www.comp.tmu.ac.jp/finance/workshop/Y2010/}{Young Researchers Workshop on Finance
+2010}'', Tokyo Metropolitan University \& CARF, The University of
+Tokyo.\\
+
+\item[$\bullet$] Seminar, Department of Mathematics, University of
+York. February 25, 2010.\\
+
+\item[$\bullet$] Invited speaker for the conference in celebration of Howell Tong's 65th birthday, Hong Kong University. December 2009.\\
+
+\item[$\bullet$] TSE-IMT Workshop ``Statistics and Econometrics with High Dimensional
+Data'',  Toulouse School of Economics, ``Estimation of Large Latent
+Factor Models for Time Series Data'', December 1, 2009.\\
+
+\item[$\bullet$] Seminar, Universite\'{e} catholique de Louvain, ``Estimation of Large Latent Factor Models for Time Series Data'',
+October 23, 2009.\\
+
+\item[$\bullet$] Invited speaker for the 2009 International Conference on Financial Statistics and Financial Econometrics, Southwestern University of Finance and Economics, Chengdu, Sichuan. July 2009.\\
+
+\item[$\bullet$] Seminar, Oxford-Man Institute of Quantitative
+Finance. ``Large Precision Matrix Estimation for Time Series Data
+with Latent Factor Model'', April 28, 2009.\\
+
+\item[$\bullet$] Sparsity in Machine Learning and Statistics 2009.
+``Large Precision Matrix Estimation for Time Series Data with Latent
+Factor Model'', Cumberland Lodge, UK, 1 - 3 April 2009.\\
+
+\item[$\bullet$] The Fourth London Oxbridge Time Series Conference
+2009. ``Large Precision Matrix Estimation for Time Series Data with
+Latent Factor Model'', March 20, 2009.\\
+
+\item[$\bullet$] Seminar, Dept. of Statistics, LSE. ``Large Precision Matrix Estimation for Time Series Data with Latent Factor
+Model'', Feb 6, 2009.\\
+
+\item[$\bullet$] Dept. of Statistics, LSE. ``High Dimensional Factor Analysis with Time Series Data'', Dec 10, 2008.\\
+
+\item[$\bullet$] Dept. of Statistics, UCL. ``Block Penalisation for Precision Matrix
+Estimation''.\\
+
+\item[$\bullet$] Dept. of Statistics, the University of Bath. ``Block Penalisation for Precision Matrix
+Estimation'', Oct 3 2008.\\
+
+\item[$\bullet$]  $7^{th}$ World Congress in Probability and
+Statistics Singapore 2008. ``Estimation of large covariance matrices
+through block penalization''.\\
+
+\item[$\bullet$] Invited seminar, Dept. Of Statistics and Actuarial Science, the University of Hong Kong, ``Estimation of large covariance matrices through penalization'', Feb 13, 2008.\\
+
+\item[$\bullet$] Invited seminar, Statistics Dept., the Chinese University of Hong Kong,``Estimation of large covariance matrices through penalization'', Feb 12, 2008.\\
+
+
+\item[$\bullet$] The Joint Statistical Meetings 2007, Salt Lake City, Utah, USA.
+   Presentation of  ``Profile-kernel likelihood inference with diverging number of
+   parameters".\\
+
+\item[$\bullet$] ICSA 2007 Applied Statistics Symposium, Raleigh, North Carolina,
+USA.
+Student award presentation of  ``Profile-kernel likelihood inference with diverging number of
+parameters".\\
+\end{itemize}
+
+
+
+\section{Teaching Experience}
+$\bigcirc$ Courses in LSE (Sabbatical 2016-17)
+\begin{itemize}
+\item[$\bullet$] 2011/12 : Lecture, ST203 Statistical Models and Data Analysis.
+\item[$\bullet$] 2010- : Lecture, ST422 Time Series.\\
+\item[$\bullet$] 2008- : Lecture, ST300 Regression and Generalised Linear
+Models.\\
+\item[$\bullet$] 2008/10 : Class tutor, ST201 Statistical Models and Data Analysis.
+\end{itemize}
+
+\vspace{12pt}
+$\bigcirc$ Course ``Introduction to Statistical Learning'', Jump Trading Ltd, July and September, 2016. Course notes available upon request.
+
+
+\vspace{12pt}
+$\bigcirc$ London Taught Course Center (LTCC)
+\begin{itemize}
+  \item[$\bullet$] 2011/2012 : Introduction to Semiparametric Modeling.
+\end{itemize}
+
+
+$\bigcirc$ {Teaching Assistant, Princeton University.}
+
+\begin{itemize}
+\item[$\bullet$] Undergraduate level:
+\begin{itemize}
+\item ORF 245: Fundamentals of Engineering Statistics (by Prof Jianqing Fan).
+\item For four academic terms, including one hour of precept every week. Office hours and grading responsibility.
+\end{itemize}
+\item[$\bullet$] Graduate level:
+\begin{itemize}
+\item ORF 524: Statistical Theory and Methods (by Prof Jianqing
+Fan).
+
+\item ORF 535: Financial Risk Management (by Prof Patrick
+Cheridito).
+
+\item ORF 525: Generalized Regression Models (by a postdoctoral student of Prof Jianqing Fan).
+\end{itemize}
+Each course requires office hours and grading responsibility, and
+I have been a teaching assistant for one academic term for each of
+these courses.
+\end{itemize}
+
+
+
+\section{Languages}
+\begin{itemize}
+        \item[$\bullet$] English (fluent in reading, speaking and writing)
+        \item[$\bullet$] Cantonese (fluent in reading, speaking and writing)
+        \item[$\bullet$] Mandarin (Intermediate in speaking, fluent in reading and writing)
+\end{itemize}
+
+
+\end{resume}
+
+\end{document}
+
+%%===========================================================================%%
